@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-backend-deploy
+  namespace: backend
+  labels:
+    app: devops-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-backend
+  template:
+    metadata:
+      labels:
+        app: devops-backend
+    spec:
+      containers:
+      - name: devops-backend
+        image: docker.io/rohaanoa/devops-backend:5
+        ports:
+        - containerPort: 5000
+      imagePullSecrets:
+      - name: dockerhub-credential
+      

@@ -1,0 +1,4 @@
+flask==2.2.3
+pymongo==4.3.3 
+azure-functions==1.13.3 
+Flask-Cors==3.0.10

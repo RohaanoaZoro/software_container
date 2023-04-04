@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-frontend-deploy
+  namespace: frontend
+  labels:
+    app: devops-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-frontend
+  template:
+    metadata:
+      labels:
+        app: devops-frontend
+    spec:
+      containers:
+      - name: devops-frontend
+        image: docker.io/rohaanoa/devops-frontend:5
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: dockerhub-credential
+      

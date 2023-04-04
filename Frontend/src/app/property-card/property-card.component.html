@@ -1,0 +1,53 @@
+
+
+<div class="card mb-3">
+    <h3 class="card-header"><span>$</span> 570,000</h3>
+    <div class="card-body">
+      <h5 class="card-title">Green score: {{property.greenscore}}</h5>
+      <h6 class="card-subtitle text-muted">{{property.address}}</h6>
+    </div>
+    <img class="property-img" src="assets/Beautiful_house_1.jpg" alt="image"/>
+    <div class="card-body">
+      <p class="card-text">{{property.description}}</p>
+    </div>
+    <div class="row ">
+      <div class="col-6 pr-0">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Energy
+            <span class="badge bg-primary rounded-pill text-white">{{property.propertyvalues.energy}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            CO2
+            <span class="badge bg-primary rounded-pill text-white">{{property.propertyvalues.co2}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Waste
+            <span class="badge bg-primary rounded-pill text-white">{{property.propertyvalues.waste}}</span>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-6 pl-0">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            cleanenergy
+            <span class="badge bg-primary rounded-pill text-white">{{property.propertyvalues.cleanenergy}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Area
+            <span class="badge bg-primary rounded-pill text-white">{{property.propertyvalues.area}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Type
+            <span class="badge bg-primary rounded-pill text-white">{{property.propertyvalues.propertytype}}</span>
+          </li>
+
+        </ul>
+      </div>      
+    </div>
+
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>

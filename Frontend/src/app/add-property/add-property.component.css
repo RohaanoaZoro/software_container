@@ -1,0 +1,69 @@
+.my-add-property-super-parent-container {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+.my-add-property-parent-left-container {
+    width: 40%;
+    height: 100vh;
+}
+
+.my-add-property-super-parent-right-container {
+    width: 60%;
+    background-color: #ffffff;
+}
+
+.my-add-property-parent-right-container {
+    width: 90%;
+    margin: auto;
+}
+
+.my-add-property-form {
+    margin-top: 10%;
+}
+
+.my-add-property-description {
+    margin-top: 5%;
+}
+
+
+.my-add-property-description > h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.my-add-property-description > p {
+    color: darkgray;
+    font-size: 16px;
+}
+
+.input-container > p {
+    color: darkgray;
+    margin: 3% 0% 1% 0%;
+
+}
+
+.input-container > input {
+    border: none;
+    border-bottom: 2px solid black;
+    width: 40%;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.my-submit-button {
+    width: 40%;
+    padding: 1% 3%;
+    background-color: #00994d;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    color: #ffffff;
+}

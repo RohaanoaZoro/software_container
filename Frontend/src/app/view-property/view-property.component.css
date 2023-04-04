@@ -1,0 +1,42 @@
+/* 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-section {
+    margin: 10%;
+    padding: 5%;
+}
+
+.my-properties-super-parent-container {
+    width: 100%;
+    margin: 5% 0%;
+}
+
+.my-properties-parent-container {
+    width: 90%;
+    margin: auto;
+}
+
+.my-property {
+    width: 30%;
+    margin: 1.5%;
+    border-radius: 10px;
+}
+
+.my-properties-container-info {
+    width: 87%;
+    margin: auto;
+}
+
+.my-properties-container-info > h2 {
+    color: #00994d;
+}
+
+.my-properties-container-info > h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+ */

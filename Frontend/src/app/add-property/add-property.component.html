@@ -1,0 +1,75 @@
+<div class="my-add-property-super-parent-container row">
+    <div class="my-add-property-parent-left-container">
+
+    </div>
+
+    <div class="my-add-property-super-parent-right-container">
+        <div class="my-add-property-parent-right-container">
+            <div class="my-add-property-description">
+                <h1>Describe your Property</h1>
+                <p>Help people find your property by filling in the below mentioned details</p>
+            </div>
+            
+            <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+                <div class="my-add-property-form">
+                    <h1>Property Details</h1>
+                    <div class="input-container">
+                        <p class="input-description">Property Name</p>
+                        <input [(ngModel)]="property.name" name="property-name" placeholder="e.g My Favourite Property" id="property-name" />
+                    </div>
+
+                    <div class="input-container">
+                        <p class="input-description">Property Type</p>
+                        <input [(ngModel)]="property.propertyvalues.propertytype" name="property-type" placeholder="e.g Residnetial or Corporate" id="property-type" />
+                    </div>
+
+                    <div class="input-container">
+                        <p class="input-description">Property Area</p>
+                        <input name="property-area" [(ngModel)]="property.propertyvalues.area" placeholder="e.g. 325(in meter square)" id="property-type" />
+                    </div>
+
+                    <div class="input-container">
+                        <p class="input-description">Property Description</p>
+                        <input [(ngModel)]="property.description" name="property-area" placeholder="e.g. This is a dream property " id="property-type" />
+                    </div>
+                </div>
+
+                <div class="my-add-property-form">
+                    <h1>Where is your Property Located</h1>
+                    <div class="input-container">
+                        <p class="input-description">Property Address</p>
+                        <input [(ngModel)]="property.address" name="property-address" type="text" placeholder="e.g. Amsterdam" id="property-address" />
+                    </div>
+                </div>
+
+                <div class="my-add-property-form">
+                    <h1>Additional details about the property</h1>
+
+                    <div class="input-container">
+                        <p class="input-description">Property Energy</p>
+                        <input [(ngModel)]="property.propertyvalues.energy" name="property-energy" placeholder="e.g 105.012 kWh" id="property-energy" />
+                    </div>
+
+                    <div class="input-container">
+                        <p class="input-description">Property CO2 Emissions</p>
+                        <input [(ngModel)]="property.propertyvalues.co2" name="property-co2" placeholder="e.g 2.105 (per cubic meter)" id="property-co2" />
+                    </div>
+
+                    <div class="input-container">
+                        <p class="input-description">Property Waste Generated</p>
+                        <input [(ngModel)]="property.propertyvalues.waste" name="property-waste" placeholder="10.100 (per kilogram)" id="property-waste" />
+                    </div>
+
+                    <div class="input-container">
+                        <p class="input-description">Property Clean Enrgy Generated</p>
+                        <input [(ngModel)]="property.propertyvalues.cleanenergy" name="property-cleanenergy" placeholder="2.572 (per kilowatt-hour)" id="property-clean" />
+                    </div>
+                </div>
+
+                <div class="my-add-property-form">
+                    <button class="my-submit-button" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

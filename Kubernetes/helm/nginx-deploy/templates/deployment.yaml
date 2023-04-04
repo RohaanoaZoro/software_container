@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-nginx-deploy
+  namespace: nginxns
+  labels:
+    app: devops-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-nginx
+  template:
+    metadata:
+      labels:
+        app: devops-nginx
+    spec:
+      containers:
+      - name: devops-nginx
+        image: docker.io/rohaanoa/devops-nginx:5
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: dockerhub-credential
+      

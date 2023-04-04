@@ -1,0 +1,49 @@
+<h1 class="mt-5">Discover Green Properties</h1>
+
+<!-- <h3 class="mt-5">Search</h3> -->
+
+
+
+<div class="row pb-2">
+  <div class="col">
+      <div class="text-right">
+        <button  class="btn btn-sm btn-primary " (click)="toggleFilter()">Filter</button>
+      </div>
+  </div>
+</div>
+
+<form class="row g-3" *ngIf="showFilter">
+
+    <div class="col-6">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-6">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-10">
+
+    </div>
+    <div class="col-md-2 ">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+
+
+  </form>
+
+  <!-- <h3 class="mt-5">Results</h3> -->
+
+
+<div class="row row-cols-3">
+    <app-property-card  class="col-4"  *ngFor="let property of properties"  [routerLink]="['view', propertyBtoa(property)]" [property]="property" ></app-property-card>
+</div>
+
